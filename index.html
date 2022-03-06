@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.tovar{
+			border: 3px black solid;
+			margin: 10px;
+			width: 250px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p>
+			Добавить товар:
+			<input type="text" id="name_tovar" placeholder="Тип товара">
+			<input type="number" id="price_tovar" placeholder="Цена товара">
+			<input type="number" id="count_tovar" placeholder="Количество">
+			<p>
+				<label for="paint_tavar">Выберите изображение товара: </label>
+				<input type="file" id="paint_tovar" value="Новый товар.jpg">
+				<button id="add_tovar" style="margin-left: 48px;">Добавить товар</button>
+			</p>
+		</p>
+	</div><br>
+
+	<p>
+		Сортировка:
+		<select id="select_sort">
+			<option disabled selected>Выберите тип сортировки</option>
+			<option value="Тип товара">Тип товара</option>
+			<option value="Цена (по возрастанию)">Цена (по возрастанию)</option>
+			<option value="Количество (по возрастанию)">Количество (по возрастанию)</option>
+		</select>
+		<button id="sort_button">
+			Отсортировать
+		</button>
+	</p>
+
+	<p>
+		Вид:
+		<select id="select_view">
+			<option disabled selected>Выберите вид</option>
+			<option value="Плитка">Плитка</option>
+			<option value="Список">Список</option>
+		</select>
+	</p>
+
+	<div id="container">	
+	</div>
+
+	<script type="text/javascript" src="functions.js">
+	</script>
+	
+</body>
+
+</html>
